@@ -1,2 +1,2 @@
 # compatibility
-html中的兼容性
+[手机兼容性](phone.md)
