@@ -1,0 +1,6 @@
+#使用方法
+```js
+在html页面<head></head>之间加入如下代码：
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+viewport这个属性是在移动设备上设置原始大小显示和是否缩放的声明
+```
