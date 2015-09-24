@@ -1,3 +1,14 @@
+#手机端兼容性
+- [使用方法](#使用方法) 
+- [content中的参数](#content中的参数) 
+- [手机端特产](#手机端特产) 
+- [样式中的媒体查询](#样式中的媒体查询) 
+- [常见媒体查询](#常见媒体查询)
+- [嵌套的媒体查询](#嵌套的媒体查询) 
+- [解决不支持媒体查询的方法](#解决不支持媒体查询的方法)
+- [样式表中的示例](#样式表中的示例)
+
+
 #使用方法
 ```js
 在html的<head></head>中加入如下代码：
@@ -15,7 +26,7 @@
   user-scalable  //用户是否可以手动缩放
 
 ```
-#手机端特有
+#手机端特产
 
 ```js
 
@@ -32,7 +43,8 @@
 *iphone的私有标签，指定iphone中safair顶端的状态调的样式；
 *在web app 应用下状态条（屏幕顶部条）的颜色：
 *默认为default(白色)，可以定为black（黑色）和black-translucent(灰色半透明)。
-*注：若值为“black-translucent”将会占据px位置，浮在页面上方（会覆盖20px,高度-iphone4和itouch4的Retiana的屏幕为40px）
+*注：若值为“black-translucent”将会占据px位置，浮在页面上方，
+*（会覆盖20px,高度-iphone4和itouch4的Retiana的屏幕为40px）。
 */
 <mete name="format-detection" content="telephone=no">
 /**
@@ -47,17 +59,17 @@
 
 ```
 ```js
-//使用媒体类型
+使用媒体类型
 <link rel="stylesheet" type="text/css" href="site.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="print.css" media="print" />
-screen 适用于计算机彩色屏幕
-print  适用于打印预览模式下查看的内容或者打印机打印的内容。
+//screen 适用于计算机彩色屏幕
+//print  适用于打印预览模式下查看的内容或者打印机打印的内容。
 ```
 ```js
-//媒体查询规则
+媒体查询规则
 @media all and (min-width: 800px) { ... }
-@media all是媒体类型，将此css运用于所有媒体类型
-(min-width:800px) 是包含媒体查询的表达式，如果浏览器的最小宽度为 800 像素，则会告诉浏览器只运用下列 CSS。
+//@media all是媒体类型，将此css运用于所有媒体类型
+//(min-width:800px) 是包含媒体查询的表达式，如果浏览器的最小宽度为 800 像素，则会告诉浏览器只运用下列 CSS。
 ```
 ```js
 简写语法
